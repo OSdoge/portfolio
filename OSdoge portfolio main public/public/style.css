@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap');
+
+html::-webkit-scrollbar
+{
+    display: none;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trispace', sans-serif;
+    scroll-behavior: smooth;
+    color: whitesmoke;
+}
+
+body
+{
+    min-height: 100vh;
+    background: #101329;
+    display: block;
+}
+
+header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000000;
+}
+
+header .logo
+{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 2em;
+}
+
+header ul
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li
+{
+    list-style: none;
+    margin-left: 20px;
+    transition: all .3s ease-in-out;
+}
+
+header ul li a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 8px;
+    transition: all .3s ease-in-out;
+}
+
+header ul li a:hover, header ul li:hover
+{
+    color: rgb(211, 209, 209);
+    transform: scale(0.95);
+}
+
+section
+{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div .out#outer
+{
+    overflow: hidden;
+}
+
+/* section::before
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #101329, transparent);
+    z-index: 1000;
+} */
+
+
+section img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section img#sky
+{
+    z-index:-8;
+}
+section img#clouds1
+{
+    z-index: -7;
+}
+section img#rocks
+{
+    z-index: -6;
+}
+section img#clouds2
+{
+    z-index: -5;
+}
+section img#ground1
+{
+    z-index: -4;
+}
+section img#ground2
+{
+    z-index: -3;
+}
+section img#ground3
+{
+    z-index: -2;
+}
+section img#plant
+{
+    z-index: -1;
+}
+.banner
+{
+    background-color: #1f2333;
+    height: 100px;
+    width: 100%;
+    z-index: 6;
+    bottom: 0;
+    left: 0;
+}
+
+#btn
+{
+    z-index: 100;
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 30px;
+    color: whitesmoke;
+    font-size: x-large;
+}
+
+.button
+{
+    z-index: 100;
+    width: 100vw;
+    margin: auto;
+}
+
+.sec
+{
+    background-color: #101329;
+}
+
+.desktop
+{
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Mobile Display */
+
+.mobile
+{
+    margin: 0;
+    padding: 0;
+    font-size: small;
+    display: block;
+}
+
+.mobile header
+{
+    padding: 5% 5%;
+    display: block;
+}
+
+.mobile hr
+{
+    margin: 5% 0;
+}
+
+.mobile span
+{
+    width: 100%;
+    height: 100%;
+    right: 0%;
+}
+
+.mobile header ul
+{
+    display: flex;
+}
+
+.mobile header ul li
+{
+    margin: 0;
+    margin-bottom: 5%;
+}
+
+.mobile section h2
+{
+    text-align: center;
+}
